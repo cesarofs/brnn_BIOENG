@@ -126,7 +126,7 @@ text(x=2.5, y=9,labels="R²=0.973709")
 df_scaled <- scale(df)
 
 X <- df_scaled[, 1:5]
-train_samples <- sample(1:nrow(df_scaled), 0.8 * nrow(X))
+train_samples <- sample(1:nrow(df_scaled), 0.6 * nrow(X))
 X_train <- X[train_samples,]
 X_val <- X[-train_samples,]
 
